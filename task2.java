@@ -1,5 +1,4 @@
 public class task2 {
-    public static void main(String[] args) {
         // int[] arr = {1,2,3,4};
         // int found = 0;
         // int target = 2;
@@ -11,12 +10,12 @@ public class task2 {
         //         System.out.println(-1);
         //     }
         // }
-        
+        public static void searchArray(int key) {
+
         int[] arr = {1,2,3,4};
         int i = 0;
         int found = 0;
         int location = 0;
-        int key = 2;
 
         while (i<=3 && found==0){
             if(arr[i]==key){
@@ -35,6 +34,9 @@ public class task2 {
         }
 
 
+    }
+    public static void main(String[] args) {
+        searchArray(2);
     }
     
 }
